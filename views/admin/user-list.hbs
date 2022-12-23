@@ -1,0 +1,51 @@
+<main id="main" class="main">
+   
+<div class="container ">
+    <div class="my-auto">
+        {{!-- <a class="btn btn-primary" href=""></a> --}}
+    </div>
+    </div>
+    <!-- Default Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile NO</th>
+                <th scope="col">action</th>
+                {{!-- <th scope="col">Edite</th>
+                <th scope="col">Delete</th> --}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each userData}}
+            <tr>
+                <th scope="row">{{@index}}</th>
+                <td>{{this.Name}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.PhoneNumber}}</td>
+                {{#if this.block}}
+                <td>
+                    <a href="/admin/user-Unblock?id={{this._id}}" class="btn btn-success">UnBlock</a>
+                    
+                </td>
+                {{else}}
+                <td>
+                    <a href="/admin/user-block?id={{this._id}}" class="btn btn-danger">Block</a>
+                    
+                </td>
+                {{/if}}
+
+               
+
+            </tr>
+            {{/each}}
+            
+                
+        </tbody>
+    </table>
+    <!-- End Default Table Example -->
+    </div>
+    </div>
+</main>

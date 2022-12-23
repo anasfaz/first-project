@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>eTrade || Home-01</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+    {{!-- cdn boorstrap --}}
+    
+
+    <!-- CSS
+    ============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/stylesheets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/font-awesome.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/flaticon/flaticon.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/slick.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/slick-theme.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/jquery-ui.min.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/sal.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/base.css">
+    <link rel="stylesheet" href="/stylesheets/style.min.css">
+    {{!-- ajax script --}}
+    
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+
+</head>
+
+<body>
+    
+
+
+{{!-- <body class="sticky-header newsletter-popup-modal"> --}}
+{{#if User}}
+{{>user-header}}
+{{/if}}
+{{{body}}}
+{{#if User}}
+{{>user-footer}}
+{{/if}}
+
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+    
+    <!-- Offer Modal End -->
+    <!-- JS
+============================================ -->
+    <!-- Modernizer JS -->
+    <script src="../javascripts/vendor/modernizr.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="../javascripts/vendor/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../javascripts/vendor/popper.min.js"></script>
+    <script src="../javascripts/vendor/bootstrap.min.js"></script>
+    <script src="../javascripts/vendor/slick.min.js"></script>
+    <script src="../javascripts/vendor/js.cookie.js"></script>
+    <!-- <script src="../javascripts/vendor/jquery.style.switcher.js"></script> -->
+    <script src="../javascripts/vendor/jquery-ui.min.js"></script>
+    <script src="../javascripts/vendor/jquery.countdown.min.js"></script>
+    <script src="../javascripts/vendor/sal.js"></script>
+    <script src="../javascripts/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="../javascripts/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="../javascripts/vendor/isotope.pkgd.min.js"></script>
+    <script src="../javascripts/vendor/counterup.js"></script>
+    <script src="../javascripts/vendor/waypoints.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="../javascripts/main.js"></script>
+    {{!-- user js script --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/javascripts/UserScript.js"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+   
+    
+
+
+</body>
+</html>

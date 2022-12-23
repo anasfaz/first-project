@@ -1,0 +1,38 @@
+<main id="main" class="main">
+  <div class="card" style="margin-top: 70px;">
+    <div class="card-body">
+      <h5 class="card-title">order view</h5>
+
+      <!-- Default Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Customer</th>
+            <th>Location</th>
+            <th>Order Date</th>
+            {{!-- <th></th> --}}
+            <th>Net Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each orders}}
+          <tr>
+            <td>{{@index}}</td>
+            <td>{{this.deliveryDetiles.name}}</td>
+            <td>{{this.deliveryDetiles.address}}</td>
+            <td>{{this.date}}</td>
+
+            <td>₹{{this.totalAmount}}</td>
+            <td><a href="/admin/order-product-view/{{this._id}}" class="view" title="View Details"
+                data-toggle="tooltip"><i class="bi bi-arrow-right-circle"></i></a></td>
+          </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+      <!-- End Default Table Example -->
+    </div>
+  </div>
+</main>

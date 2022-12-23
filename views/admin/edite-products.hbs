@@ -1,0 +1,72 @@
+<section class="vh-150" style="background-color: #2779e2;">
+  <div class="container h-150">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-9">
+
+        <h1 class="text-white mb-4">edit products</h1>
+
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body">
+
+             <section style="">
+          <div class="h-10">
+            <form action="/admin/edite-products/{{product._id}}" method="post" enctype="multipart/form-data">
+              <div>
+                <label for="">Product-Name</label>
+              <input type="text" class="form-control" name="Name"  value="{{product.Name}}" required>
+              </div>
+              <div><label for="">Product-Discription</label>
+                <input type="text" class="form-control" name="Discription" value="{{product.Discription}}" required>
+              </div>
+              <div> <label for="">Category</label>
+                <input type="text" class="form-control" name="Category" value="{{product.category}}" required>
+              </div>
+              <div><label for="">Price</label>
+                <input type="number" class="form-control" name="Price" value="{{product.Price}}" required>
+              </div>
+              <div>
+                <label for="">Image</label>
+                <img src="/product-images/{{product._id}}.png" alt="" style="width: 100px;height: auto;">
+                <input type="file" name="image" class="form-control" >
+              </div>
+              <div>
+                <label for="">Image1</label>
+                <img src="/product-images1/{{product._id}}.png" alt="" style="width: 100px;height: auto;">
+                <input type="file" name="image1" class="form-control" >
+              </div>
+              <div>
+                <label for="">Image2</label>
+                <img src="/product-images2/{{product._id}}.png" alt="" style="width: 100px;height: auto;">
+                <input type="file" name="image2" class="form-control" >
+              </div>
+              <div>
+                <label for="">Image3</label>
+                <img src="/product-images3/{{product._id}}.png" alt="" style="width: 100px;height: auto;">
+                <input type="file" name="image3" class="form-control" >
+              </div>
+              {{!-- <label for="cars">Choose a Category:</label>
+              <select name="category" required> --}}
+                
+                
+                
+              </select>
+              <div class="d-flex justify-content-center align-items-center mt-3">
+                <button type="submit" class="btn btn-primary ">submit</button>
+              </div>
+            </form>
+          </div>
+
+        </section>
+
+          </div>
+        </div>
+
+       
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>

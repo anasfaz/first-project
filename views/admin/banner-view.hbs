@@ -1,0 +1,44 @@
+ 
+<main id="main" class="main">
+   
+<div class="container ">
+    <div class="my-auto">
+        <a class="btn btn-primary" href="/admin/banner">Add banner</a>
+    </div>
+    </div>
+    <!-- Default Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Banner Image</th>
+                <th scope="col">Banner-text</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {{#each banner}}
+            <tr>
+                <th scope="row">{{@index}}</th>
+                <td><img style="height: 50px; width:50px;" src="/banner-image/{{this._id}}.png" alt="">  </td>
+                <td>{{this.bannerText}}</td>
+                {{!-- <td>{{this.Category}}</td>
+                <td>{{this.Price}}</td>
+                <td>
+                    <a href="/admin/product-edite?id={{this._id}}" class="btn btn-primary">Edite</a>
+                    
+                </td>
+                <td>
+                    <a href="/admin/product-delete/{{this._id}}" class="btn btn-danger " onclick="return confirm('Are you want to Delete {{this.Name}}?')">Delete</a>
+                </td> --}}
+
+            </tr>
+            {{/each}}
+            <tr>
+                
+        </tbody>
+    </table>
+    <!-- End Default Table Example -->
+    </div>
+    </div>
+</main>

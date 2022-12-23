@@ -1,0 +1,64 @@
+<main id="main" class="main">
+    <div class="card" style="margin-top: 70px; ">
+            <div class="card-body  " style=" padding: 0 20px 20px 20px;
+  margin-top: 15px;">
+        <form action="/admin/sales-date" method="post">
+            <div class="d-flex flex-wrap justify-content-sm-evenly">
+                <label for="start">Start date:</label>
+
+                <input type="date" id="start" name="fromdate">
+            
+            
+                <label for="start">to date:</label>
+
+                <input type="date" id="start" name="todate">
+                <button type="submit" class="btn btn-outline-primary ">submit</button>
+            </div>
+        </form>
+         </div>
+        </div>
+           
+            
+
+   
+    <div class="container">
+
+
+
+        <div class="card" style="margin-top: 70px;">
+            <div class="card-body">
+                <h5 class="card-title">report</h5>
+
+                <!-- Default Table -->
+                <table class="table" id="example" class="display nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>totalAmount</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        {{#each sales}}
+                        <tr>
+                            <td>{{this._id}}</td>
+                            <td>{{this.Quantity}}</td>
+                            <td>{{this.totalAmount}}</td>
+
+                        </tr>
+                        {{/each}}
+                        
+
+                    </tbody>
+
+                    </tbody>
+                </table>
+                <!-- End Default Table Example -->
+            </div>
+        </div>
+
+    </div>
+
+</main>

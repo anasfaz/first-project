@@ -1,0 +1,44 @@
+ 
+<main id="main" class="main">
+   
+<div class="container ">
+    <div class="my-auto">
+        <a class="btn btn-primary" href="/admin/add-Category">Add Category</a>
+    </div>
+    </div>
+    <!-- Default Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Category</th>
+                <th scope="col">Image</th>
+                {{!-- <th scope="col">Edite </th> --}}
+                <th scope="col">Delete</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {{#each categoryDt}}
+            <tr>
+                <th scope="row">{{@index}}</th>
+                <td>{{this.category}}</td>
+                
+               <td><img style="height: 50px; width:50px;" src="/category-image/{{this._id}}.png" alt="">  </td>
+            
+                <td>
+                    {{!-- <a href="/admin/Category-edite/{{this._id}}" class="btn btn-primary">Edite </a> --}}
+                     <a href="/admin/Category-delete/{{this._id}}" class="btn btn-danger " onclick="return confirm('Are you want to Delete {{this.Category}}?')">Delete</a>
+                </td>
+                
+
+            </tr>
+        
+            {{/each}}
+                
+        </tbody>
+    </table>
+    <!-- End Default Table Example -->
+    </div>
+    </div>
+</main>
