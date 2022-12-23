@@ -2,7 +2,7 @@ const session = require('express-session');
 // const { response, render } = require('../app');
 var productHelper = require('../helpers/productsHelpers')
 var userHelper = require('../helpers/userHelpers');
-// const { verifyLogin } = require('../middlewares/verify');
+
 
 const payPal = require('../helpers/payPal');
 const couponHelpers = require('../helpers/couponHelpers');
