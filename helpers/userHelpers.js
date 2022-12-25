@@ -311,7 +311,7 @@ module.exports = {
 
         return new Promise(async (resolve, reject) => {
             console.log(order, '************order**********');
-            console.log(products, '*******%%%%%%%%%%%%%%%%%products');
+            console.log(products, '*******%%%%%%%%%%%%%%%%%products------------------------------------------------');
             console.log(total, '$$$$$$$$$4$$$$$$$$$$$$$$$ totoal')
 
 
